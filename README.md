@@ -89,4 +89,4 @@ The connectivity was successfully verified using the ping command from ns1 to ns
 Result: ✅ 0% packet loss confirmed.
 
 ✅ End-to-end routing through router-ns is functional.
-![alt text](image-4.png)
+\![alt text](image-1.png)
