@@ -53,10 +53,12 @@ Use the provided automation script (**main.sh**) to manage the entire simulation
 To create namespaces, bridges, and configure routing:
 ```bash
 sudo ./main.sh setup
+
 ```
 
 ## 🧪 Verification Snapshot
 Here is the successful setup environment:
+
 ![alt text](image.png)
 
 ### 🔍 Test Connectivity
@@ -65,6 +67,7 @@ To verify the communication between ns1 and ns2:
 
 ```bash
 sudo ./main.sh test
+
 ```
 ## 🧪 Verification Snapshot
 Here is the successful connectivity test:
@@ -77,10 +80,12 @@ To delete all namespaces and bridges and reset the environment:
 
 ```bash
 sudo ./main.sh cleanup
+
 ```
 
 ## 🧪 Verification Snapshot
 Here is the successful cleanup test:
+
 ![alt text](image-3.png)
 
 ## 6. Testing Results
@@ -89,4 +94,5 @@ The connectivity was successfully verified using the ping command from ns1 to ns
 Result: ✅ 0% packet loss confirmed.
 
 ✅ End-to-end routing through router-ns is functional.
-\![alt text](image-1.png)
+
+![alt text](image-1.png)
