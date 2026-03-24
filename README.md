@@ -3,6 +3,18 @@
 ## 1. Project Overview
 This project simulates a networking environment with two isolated subnets connected through a virtual router using Linux Network Namespaces, Bridges, and Veth pairs.
 
+## ✨ Key Features
+- **Automated Setup:** Deploy the entire topology with a single command.
+- **Namespace Isolation:** Demonstrated Layer 2 isolation using Linux network namespaces.
+- **Routing Logic:** Configured `router-ns` for inter-subnet communication.
+- **Cleanup Utility:** One-command removal of all virtual interfaces to keep the host system clean.
+
+## 🛠 Prerequisites
+Before running the script, ensure you have the following installed:
+- Linux Kernel (Ubuntu/Debian recommended)
+- `iproute2` package
+- `bridge-utils` (optional but recommended)
+
 ## 2. Network Topology Diagram
 ```text
       [ ns1 ]                   [ ns2 ]
@@ -42,18 +54,33 @@ To create namespaces, bridges, and configure routing:
 ```bash
 sudo ./main.sh setup
 ```
+![alt text](image.png)
+
 ### 🔍 Test Connectivity
+
 To verify the communication between ns1 and ns2:
 
 ```bash
 sudo ./main.sh test
 ```
+## 🧪 Verification Snapshot
+Here is the successful connectivity test:
+
+![alt text](image-1.png)
+
 ### 🧹 Cleanup All Resources
+
 To delete all namespaces and bridges and reset the environment:
 
 ```bash
 sudo ./main.sh cleanup
 ```
+
+## 🧪 Verification Snapshot
+Here is the successful cleanup test:
+
+![alt text](image-2.png)
+
 ## 6. Testing Results
 The connectivity was successfully verified using the ping command from ns1 to ns2.
 
