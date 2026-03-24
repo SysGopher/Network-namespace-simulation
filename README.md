@@ -54,6 +54,9 @@ To create namespaces, bridges, and configure routing:
 ```bash
 sudo ./main.sh setup
 ```
+
+## 🧪 Verification Snapshot
+Here is the successful setup environment:
 ![alt text](image.png)
 
 ### 🔍 Test Connectivity
@@ -78,8 +81,7 @@ sudo ./main.sh cleanup
 
 ## 🧪 Verification Snapshot
 Here is the successful cleanup test:
-
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 ## 6. Testing Results
 The connectivity was successfully verified using the ping command from ns1 to ns2.
@@ -87,4 +89,4 @@ The connectivity was successfully verified using the ping command from ns1 to ns
 Result: ✅ 0% packet loss confirmed.
 
 ✅ End-to-end routing through router-ns is functional.
-![Alt Text](result.png)
+![alt text](image-4.png)
